@@ -1,0 +1,72 @@
+body {
+    margin: auto;
+    background-image: url(Web_agazati_forras_A/hatterek/hatter1.jpg);
+    text-align: justify;
+}
+main {
+    display: grid;
+    grid-template-areas: "h h h"
+    "n n n"
+    "ar ar as"
+    "f f f";
+    margin: auto;
+    width: 80%;
+}
+header {
+    grid-area: h;
+    font-size: 4vw;
+    font-weight: bold;
+}
+nav {
+    grid-area: n;
+    background-color: green;
+    text-align: center;
+}
+nav ul {
+     padding: 0;
+}
+nav li {
+    padding: 5px;
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav li:hover {
+    background-color: teal;
+}
+article {
+    grid-area: ar;
+    padding: 15px;
+}
+article h1 {
+    border-bottom: 5px solid green;
+}
+article img {
+    width: 200px;
+    float: right;
+    border: 1px solid lightgreen;
+    border-radius: 50px;
+}
+aside {
+    grid-area: as;
+}
+aside img {
+    size: 100%;
+}
+footer {
+    grid-area: f;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        grid-template-areas: "h h h"
+    "n n n"
+    "ar ar ar"
+    "as as as"
+    "f f f";
+    }
+
+}
